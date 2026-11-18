@@ -1,0 +1,25 @@
+<section class="panel people" id="people-panel">
+          <div class="label">CONTACT MANAGER</div>
+          <form id="person-form" class="stack">
+            <div class="row">
+              <input id="person-name" placeholder="Name" required maxlength="80" />
+              <input id="person-handle" placeholder="Email or phone" required maxlength="120" />
+            </div>
+            <div class="row">
+              <select id="person-channel">
+                <option value="gmail">Gmail</option>
+                <option value="whatsapp">WhatsApp</option>
+                <option value="notification">Alert</option>
+              </select>
+              <select id="person-role">
+                <option value="business">Reply</option>
+                <option value="operational">Operational</option>
+                <option value="blocked">Blocked</option>
+              </select>
+              <button class="save" type="submit">Add</button>
+            </div>
+          </form>
+          <div id="people" class="stack"></div>
+          <p class="hint">Quiet · operational. Inhe reply nahi jayega.</p>
+          <div id="quiet" class="stack"></div>
+        </section>

@@ -1,0 +1,48 @@
+<section class="panel timeline" id="timeline">
+          <div class="label">MEMORY AND DESK LOG</div>
+          <div class="list stack" id="list"></div>
+          <div id="audit" class="stack"></div>
+          <button class="clear" id="clear" type="button">Clear log</button>
+          <button class="clear" id="clear-memory" type="button">Delete saved drafts</button>
+        </section>
+<section class="panel commands" id="commands">
+          <div class="label">QUICK COMMANDS</div>
+          <div class="chips">
+            <button class="chip" type="button" data-text="Aaj ke sare business messages batao">Briefing</button>
+            <button class="chip" type="button" data-text="Mere approved contacts ki list kholo">Contacts</button>
+            <button class="chip" type="button" data-text="Pehle meri approval">Approval</button>
+            <button class="chip" type="button" data-text="Aaj ke liye sabhi automatic replies band kar do">Auto off</button>
+          </div>
+          <div class="label" style="margin-top: 12px">REPLY CONTROL</div>
+          <div class="stack" style="margin-top: 8px">
+            <select id="reply-mode">
+              <option value="approval">Approval first</option>
+              <option value="auto">Auto · approved only</option>
+              <option value="both">Both</option>
+            </select>
+            <div class="row">
+              <button class="save" id="save-mode" type="button">Save</button>
+              <button class="clear" id="emergency" type="button">Emergency stop</button>
+            </div>
+          </div>
+          <details>
+            <summary>Assistant settings</summary>
+            <form id="settings-form">
+              <label class="field"><span class="label">Name</span><input id="name" name="name" required maxlength="40" /></label>
+              <label class="field"><span class="label">Model</span><input id="model" name="model" required maxlength="80" /></label>
+              <label class="field"><span class="label">System prompt</span><textarea id="prompt" name="system_prompt" required maxlength="2000"></textarea></label>
+              <p class="hint" id="mode-hint"></p>
+              <button class="save" type="submit">Save</button>
+            </form>
+          </details>
+          <p class="hint">Sensitive messages need extra approval. Unknown people get no reply.</p>
+          <div id="security-extra">
+            <div class="label">THIS SESSION</div>
+            <p id="session-line">Sign in to see this account.</p>
+            <p class="hint">Older login history is not stored. Only this browser session is known.</p>
+            <div class="label">API</div>
+            <p class="hint">The phone and this page call the same local API. There is no separate API key.</p>
+            <div class="label">ACCESS</div>
+            <p class="hint">One owner account on this computer. Password is stored only as a hash.</p>
+          </div>
+        </section>

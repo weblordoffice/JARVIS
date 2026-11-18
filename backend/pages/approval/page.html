@@ -1,0 +1,33 @@
+<section class="panel live" id="live">
+          <div class="label" id="live-title">AI INBOX</div>
+          <div class="filters" id="inbox-filters">
+            <button type="button" data-inbox-filter="all" class="on">All</button>
+            <button type="button" data-inbox-filter="gmail">Gmail</button>
+            <button type="button" data-inbox-filter="whatsapp">WhatsApp</button>
+            <button type="button" data-inbox-filter="open">Needs you</button>
+            <button type="button" data-inbox-filter="history">History</button>
+          </div>
+          <input id="inbox-search" class="search" type="search" placeholder="Search messages" />
+          <p class="hint" id="control-hint"></p>
+          <p class="hint" id="module-note"></p>
+          <div class="tri">
+            <div id="inbox" class="stack"></div>
+            <div id="chat-pane"></div>
+            <div id="reply-pane"></div>
+          </div>
+          <div id="history-list" class="stack"></div>
+          <details>
+            <summary>Log a message</summary>
+            <form id="inbox-form" class="stack">
+              <input id="in-sender" placeholder="Sender" required maxlength="80" />
+              <input id="in-handle" placeholder="Email or phone" maxlength="120" />
+              <select id="in-channel">
+                <option value="gmail">Gmail</option>
+                <option value="whatsapp">WhatsApp</option>
+                <option value="notification">Alert</option>
+              </select>
+              <textarea id="in-body" placeholder="Paste the business message" required maxlength="4000"></textarea>
+              <button class="save" type="submit">Log message</button>
+            </form>
+          </details>
+        </section>

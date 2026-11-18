@@ -1,0 +1,212 @@
+{
+  "next_id": 13,
+  "next_contact_id": 3,
+  "next_inbox_id": 5,
+  "handled": 12,
+  "next_work_id": 3,
+  "settings": {
+    "name": "JARVIS",
+    "model": "gpt-4o-mini",
+    "reply_mode": "approval",
+    "emergency_stop": false,
+    "system_prompt": "You are JARVIS, a calm assistant for business messages. Reply only to people on the approved list, and only after the active reply mode allows it. Never reply to operational, blocked, unknown, or spam contacts. Answer in the language the user writes in."
+  },
+  "projects": [],
+  "tasks": [],
+  "meetings": [],
+  "documents": [
+    {
+      "title": "hi",
+      "kind": "pdf",
+      "text": "ji",
+      "summary": "ji",
+      "amounts": [],
+      "dates": [],
+      "note": "Sirf woh amount aur date jo text mein likhe hain. Jo likha nahi, woh guess nahi kiya.",
+      "id": 2,
+      "time": "2026-11-17T17:22:35"
+    }
+  ],
+  "messages": [
+    {
+      "id": 12,
+      "text": "[gmail] Meera Shah: Need the invoice today",
+      "reply": "Hello Meera, I have your message. I will confirm the exact detail before answering. I will not guess.",
+      "source": "local",
+      "time": "2026-11-17T17:20:53.602001"
+    },
+    {
+      "id": 11,
+      "text": "aaj ki report",
+      "reply": "Daily business report:\nNaye clients aaj: 1.\nPending replies: 1.\nAaj complete hue replies: 1.\nOpen tasks: 0.\nAane wali meetings, 7 din: 0.\nProjects: 0. Documents: 0.",
+      "source": "local",
+      "time": "2026-11-17T17:15:39.666301"
+    },
+    {
+      "id": 10,
+      "text": "hi",
+      "reply": "Hello. JARVIS is online.",
+      "source": "local",
+      "time": "2026-11-17T15:58:00.937464"
+    },
+    {
+      "id": 9,
+      "text": "hi",
+      "reply": "Hello. JARVIS is online.",
+      "source": "local",
+      "time": "2026-11-17T12:59:45.066616"
+    },
+    {
+      "id": 8,
+      "text": "Aaj ke liye sabhi automatic replies band kar do",
+      "reply": "Automatic replies band. Har reply pehle aapki approval ka wait karega.",
+      "source": "local",
+      "time": "2026-11-17T12:20:32.392795"
+    },
+    {
+      "id": 7,
+      "text": "Rahul ko ek accha professional reply likho",
+      "reply": "Rahul ka koi message desk par nahi hai. Main andaza laga kar jawab nahi likhunga.",
+      "source": "local",
+      "time": "2026-11-17T12:20:32.391985"
+    },
+    {
+      "id": 6,
+      "text": "Mere approved contacts ki list kholo",
+      "reply": "Approved contacts: Meera Shah",
+      "source": "local",
+      "time": "2026-11-17T12:20:32.391263"
+    },
+    {
+      "id": 5,
+      "text": "Kal ke sabhi pending emails dikhao",
+      "reply": "Pending emails:\nMeera Shah: Can we confirm Friday?",
+      "source": "local",
+      "time": "2026-11-17T12:20:32.390497"
+    },
+    {
+      "id": 4,
+      "text": "JARVIS, aaj ke sare business messages batao",
+      "reply": "Aaj desk par 4 messages hain.\nBusiness 3. Pending approval 1. Spam 0.\n- Meera Shah: Can we confirm Friday?",
+      "source": "local",
+      "time": "2026-11-17T12:20:32.388102"
+    },
+    {
+      "id": 3,
+      "text": "[gmail] Meera Shah: Please confirm the Friday meeting.",
+      "reply": "Hello Meera, thank you for writing. I have your message and will come back with the next step shortly.",
+      "source": "local",
+      "time": "2026-11-17T12:02:45.836535"
+    },
+    {
+      "id": 2,
+      "text": "sirf approved contacts ko automatic reply",
+      "reply": "Sirf approved business contacts ko automatic reply hoga. Baaki ko kuch nahi jayega.",
+      "source": "local",
+      "time": "2026-11-17T11:51:31.315314"
+    },
+    {
+      "id": 1,
+      "text": "Emergency stop",
+      "reply": "Emergency stop on. Kisi ko reply nahi jayega.",
+      "source": "local",
+      "time": "2026-11-17T11:51:31.312165"
+    }
+  ],
+  "contacts": [
+    {
+      "id": 1,
+      "name": "Meera Shah",
+      "handle": "meera@studio.com",
+      "channel": "gmail",
+      "role": "business",
+      "auto_reply": false,
+      "vip": false
+    },
+    {
+      "id": 2,
+      "name": "Warehouse",
+      "handle": "ops@plant.com",
+      "channel": "gmail",
+      "role": "operational",
+      "auto_reply": false,
+      "vip": false
+    }
+  ],
+  "inbox": [
+    {
+      "id": 4,
+      "channel": "gmail",
+      "sender": "Meera Shah",
+      "handle": "meera@studio.com",
+      "body": "Please confirm the Friday meeting.",
+      "priority": "business",
+      "time": "2026-11-17T11:54:32.062593",
+      "decision": "reply",
+      "status": "replied",
+      "draft": "Hello Meera, thank you for writing. I have your message and will come back with the next step shortly.",
+      "draft_source": "local",
+      "reason": "Approved by you. Reply queued."
+    },
+    {
+      "id": 3,
+      "channel": "gmail",
+      "sender": "Meera Shah",
+      "handle": "meera@studio.com",
+      "body": "Need the invoice today",
+      "priority": "business",
+      "time": "2026-11-17T11:51:31.316819",
+      "decision": "reply",
+      "status": "replied",
+      "draft": "Hello Meera, I have your message. I will confirm the exact detail before answering. I will not guess.",
+      "draft_source": "local",
+      "reason": "Approved by you. Reply queued.",
+      "lead_status": "converted",
+      "followup": "Hello Meera, I am following up on your message. I will confirm the details before sharing a price, date, or commitment."
+    },
+    {
+      "id": 2,
+      "channel": "gmail",
+      "sender": "Warehouse",
+      "handle": "ops@plant.com",
+      "body": "Shift roster",
+      "priority": "personal",
+      "time": "2026-11-17T11:51:31.310293",
+      "decision": "skip",
+      "status": "skipped",
+      "draft": "",
+      "draft_source": "local",
+      "reason": "Operational contact. No reply."
+    },
+    {
+      "id": 1,
+      "channel": "gmail",
+      "sender": "Meera Shah",
+      "handle": "meera@studio.com",
+      "body": "Can we confirm Friday?",
+      "priority": "business",
+      "time": "2026-11-17T11:51:31.308933",
+      "decision": "reply",
+      "status": "pending",
+      "draft": "Hello Meera, thank you for writing. I have your message and will come back with the next step shortly.",
+      "draft_source": "local",
+      "reason": "Approved contact. Waiting for your approval."
+    }
+  ],
+  "audit": [
+    {
+      "sender": "Meera Shah",
+      "channel": "gmail",
+      "body": "Need the invoice today",
+      "draft": "Hello Meera, I have your message. I will confirm the exact detail before answering. I will not guess.",
+      "time": "2026-11-17T17:20:53.602024"
+    }
+  ],
+  "account": {
+    "email": "admin@gmail.com",
+    "name": "Admin",
+    "salt": "64fd9c204716e8a78791c398f51c53c8",
+    "password_hash": "a995b98e9df13efabe66ed7803d7b560fbfa03124477d4ae20a8c10bdfa8d665",
+    "token": "b2Zx_x3ES4ddQGAbDkb_CEI6imEp0vHtqS7sFS1CSVU"
+  }
+}

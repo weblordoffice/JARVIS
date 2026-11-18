@@ -1,0 +1,86 @@
+<section class="panel core" id="core">
+          <div class="dash-top">
+            <div>
+              <div class="label">MAIN DASHBOARD</div>
+              <h1>Welcome back, <span id="welcome-name">Admin</span></h1>
+              <p class="hint" id="brief"></p>
+            </div>
+            <div class="dash-mode">
+              <div class="label">AI MODE</div>
+              <strong id="mode" class="value">—</strong>
+              <div class="hint">Uptime <span id="uptime">—</span></div>
+              <p class="hint" id="assist-line"></p>
+            </div>
+          </div>
+          <div class="tiles">
+            <a class="tile t-blue" href="/admin/inbox" data-jump="inbox">Inbox<small>Gmail, WhatsApp, alerts</small></a>
+            <a class="tile t-green" href="/admin/approval" data-jump="approval">Approval<small>Pending replies</small></a>
+            <a class="tile t-orange" href="/admin/people" data-jump="people">Contacts<small>Who can get a reply</small></a>
+            <a class="tile t-green" href="/admin/leads" data-jump="leads">Leads<small>Real enquiries only</small></a>
+            <a class="tile t-cyan" href="/admin/work" data-jump="work">Work<small>Clients, tasks, meetings</small></a>
+            <a class="tile t-red" href="/admin/rules" data-jump="rules">Automation<small>If / then rules</small></a>
+            <a class="tile t-indigo" href="/admin/channels" data-jump="channels">Gmail & WhatsApp<small>Connection status</small></a>
+            <a class="tile t-cyan" href="/admin/brain" data-jump="brain">AI Brain<small>Prompt and memory</small></a>
+            <a class="tile t-amber" href="/admin/security" data-jump="security">Security<small>Session and stop</small></a>
+            <a class="tile t-teal" href="/admin/devices" data-jump="devices">Devices<small>Phone and this page</small></a>
+            <a class="tile t-blue" href="/admin/health" data-jump="health">Health<small>API and uptime</small></a>
+            <a class="tile t-green" href="/admin/desk" data-jump="desk">Desk<small>Talk to JARVIS</small></a>
+          </div>
+          <div class="dash-cards">
+            <article class="metric"><span>Total messages</span><strong id="in-log">—</strong><small>Logged in the inbox</small></article>
+            <article class="metric"><span>WhatsApp</span><strong id="dash-whatsapp">—</strong><small>Logged chats</small></article>
+            <article class="metric"><span>Gmail</span><strong id="dash-gmail">—</strong><small>Logged mail</small></article>
+            <article class="metric"><span>Active contacts</span><strong id="dash-contacts">—</strong><small>Allowed to receive a reply</small></article>
+            <article class="metric"><span>AI activity</span><strong id="handled">—</strong><small>Replies handled</small></article>
+          </div>
+          <div class="dash-split">
+            <div class="metric-block">
+              <div class="label">INBOX NOW</div>
+              <div id="buckets"></div>
+              <div id="mix" class="mix"></div>
+            </div>
+            <div class="metric-block assist">
+              <img src="/login-art.jpg?v=2" alt="" />
+              <div>
+                <div class="label">ASSISTANT</div>
+                <h2 id="title">JARVIS</h2>
+                <p class="hint">Tap to speak opens the desk. Gmail and WhatsApp are not connected, so nothing is sent from those apps.</p>
+              </div>
+            </div>
+          </div>
+          <div class="home-low">
+            <div class="metric-block">
+              <div class="label">RECENT MESSAGES</div>
+              <div id="dash-activity" class="stack"></div>
+              <p class="rule">Sirf approved contacts ko reply. Operational contacts chup rahenge.</p>
+            </div>
+            <div class="metric-block">
+              <div class="label">QUICK ACTIONS</div>
+              <div class="jumps">
+                <a href="/admin/inbox" data-jump="inbox">Quick message</a>
+                <a href="/admin/people" data-jump="people">Manage contacts</a>
+                <a href="/admin/rules" data-jump="rules">Create rule</a>
+                <a href="/admin/reports" data-jump="reports">View reports</a>
+                <a href="/admin/approval" data-jump="approval">Approval</a>
+                <a href="/admin/stop" data-jump="stop">Emergency stop</a>
+              </div>
+              <div class="label" style="margin-top:14px">TODAY</div>
+              <div class="quick-stats">
+                <div><span>Pending</span><strong id="dash-pending">—</strong></div>
+                <div><span>Replied</span><strong id="stat-replied">—</strong></div>
+                <div><span>Held</span><strong id="stat-held">—</strong></div>
+                <div><span>Skipped</span><strong id="stat-skipped">—</strong></div>
+              </div>
+            </div>
+            <div class="metric-block">
+              <div class="label">SYSTEM STATUS</div>
+              <div class="sys-list">
+                <div><span>Backend</span><b id="sys-backend">Checking</b></div>
+                <div><span>Emergency stop</span><b id="sys-stop">—</b></div>
+                <div><span>Gmail</span><b>Not connected</b></div>
+                <div><span>WhatsApp</span><b>Not connected</b></div>
+              </div>
+              <p class="hint" id="dash-sync"></p>
+            </div>
+          </div>
+        </section>

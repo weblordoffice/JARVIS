@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>JARVIS Admin</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='10' fill='none' stroke='%233ce7ff' stroke-width='2'/%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="/assets/css/admin.css" />
+
+</head>
+<body>
+  <main id="gate">
+    <section class="gate-hero">
+      <img src="/login-art.jpg?v=2" alt="JARVIS admin" />
+    </section>
+    <section class="gate-card">
+      <div class="gate-badge">J</div>
+      <h1 id="gate-title">Admin <span>Login</span></h1>
+      <p class="lede">Sign in to access JARVIS Control Center</p>
+      <form id="gate-form">
+        <input id="gate-name" type="text" placeholder="Name" hidden />
+        <input id="gate-email" type="email" placeholder="Email Address" autocomplete="username" required />
+        <input id="gate-password" type="password" placeholder="Password" autocomplete="current-password" minlength="5" required />
+        <div class="gate-row">
+          <label><input id="gate-remember" type="checkbox" checked /> Remember Me</label>
+          <button id="gate-forgot" type="button">Forgot Password?</button>
+        </div>
+        <p id="gate-error"></p>
+        <button id="gate-submit" type="submit">Login</button>
+        <div class="gate-or">or</div>
+        <button id="gate-google" type="button">Continue with Google</button>
+        <button id="gate-switch" type="button">Naya account banao</button>
+      </form>
+    </section>
+  </main>
+  <div class="app" hidden>
+    <aside class="side">
+      <div class="brand">
+        <div class="mark">J</div>
+        <div>
+          <strong>JARVIS</strong>
+          <span>COMMAND CENTER</span>
+        </div>
+      </div>
+      <a class="nav" href="/admin" data-screen="home">Main Dashboard</a>
+      <a class="nav" href="/admin/inbox" data-screen="inbox">AI Inbox</a>
+      <a class="nav" href="/admin/approval" data-screen="approval">Approval <em id="nav-pending" hidden></em></a>
+      <a class="nav" href="/admin/channels" data-screen="channels">Gmail & WhatsApp</a>
+      <a class="nav" href="/admin/rules" data-screen="rules">Automation</a>
+      <a class="nav" href="/admin/brain" data-screen="brain">AI Brain</a>
+      <a class="nav" href="/admin/security" data-screen="security">Security</a>
+      <a class="nav" href="/admin/devices" data-screen="devices">Devices</a>
+      <a class="nav" href="/admin/health" data-screen="health">System Health</a>
+      <a class="nav" href="/admin/people" data-screen="people">Contacts</a>
+      <a class="nav" href="/admin/leads" data-screen="leads">Leads</a>
+      <a class="nav" href="/admin/work" data-screen="work">Work</a>
+      <a class="nav" href="/admin/desk" data-screen="desk">Desk</a>
+      <div class="voice">
+        <div class="label">VOICE STATUS</div>
+        <p id="voice-state">Standby</p>
+        <button type="button" id="focus-talk">Tap to speak</button>
+      </div>
+    </aside>
+    <div class="main">
+      <header class="top">
+        <input id="search" class="search" type="search" placeholder="Search log" />
+        <div class="clock">
+          <small id="clock-date"></small>
+          <div id="clock-time"></div>
+        </div>
+        <div class="top-right">
+          <div class="status">
+            <span id="dot" class="dot"></span>
+            <span>SYSTEM · <span id="status-label">CHECKING</span></span>
+          </div>
+          <a class="head-who" href="/admin/profile" data-screen="profile">
+            <span class="avatar" id="head-mark">J</span>
+            <span>
+              <strong id="head-name">Account</strong>
+              <small id="head-email"></small>
+            </span>
+          </a>
+        </div>
+      </header>
+      <div id="error" class="error"></div>
+      <div id="saved" class="saved">Settings saved.</div>
+      <div class="board">
+<!--PAGE-->
+      </div>
+      <footer class="talk" id="talk">
+        <span class="eq">⌁ ⌁ ⌁</span>
+        <form id="form">
+          <input id="text" name="text" placeholder="TALK TO JARVIS" autocomplete="off" required />
+          <button class="send" id="voice-command" type="button">Speak</button>
+          <button class="send" type="submit">Send</button>
+        </form>
+        <span class="eq">⌁ ⌁ ⌁</span>
+      </footer>
+    </div>
+  </div>
+  <script src="/assets/js/admin.js"></script>
+</body>
+</html>

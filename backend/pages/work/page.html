@@ -1,0 +1,55 @@
+<section class="panel extra" id="work">
+          <div class="label">DAILY BUSINESS REPORT</div>
+          <div id="report-lines" class="stack"></div>
+          <div class="card-grid" style="margin-top:12px">
+            <article class="integ">
+              <div class="label">PROJECT</div>
+              <form id="project-form" class="stack">
+                <input id="project-client" placeholder="Client" required maxlength="80" />
+                <input id="project-name" placeholder="Project" required maxlength="120" />
+                <input id="project-budget" placeholder="Budget, only if you know it" maxlength="40" />
+                <input id="project-deadline" type="date" />
+                <button class="save" type="submit">Save project</button>
+              </form>
+              <div id="project-list" class="stack"></div>
+            </article>
+            <article class="integ">
+              <div class="label">TASK</div>
+              <form id="task-form" class="stack">
+                <input id="task-title" placeholder="Task from the client" required maxlength="160" />
+                <input id="task-client" placeholder="Client" maxlength="80" />
+                <input id="task-due" type="date" />
+                <button class="save" type="submit">Save task</button>
+              </form>
+              <div id="task-list" class="stack"></div>
+            </article>
+            <article class="integ">
+              <div class="label">MEETING</div>
+              <form id="meeting-form" class="stack">
+                <input id="meeting-title" placeholder="Meeting" required maxlength="160" />
+                <input id="meeting-client" placeholder="Client" maxlength="80" />
+                <input id="meeting-when" type="datetime-local" required />
+                <button class="save" type="submit">Save meeting</button>
+              </form>
+              <div id="meeting-list" class="stack"></div>
+            </article>
+            <article class="integ">
+              <div class="label">DOCUMENT</div>
+              <form id="document-form" class="stack">
+                <input id="document-title" placeholder="Invoice or project note" required maxlength="120" />
+                <select id="document-kind">
+                  <option value="invoice">Invoice</option>
+                  <option value="project">Project</option>
+                  <option value="pdf">PDF text</option>
+                  <option value="note">Note</option>
+                </select>
+                <textarea id="document-text" placeholder="Paste the document text. A PDF file is not read from disk." required maxlength="8000"></textarea>
+                <button class="save" type="submit">Read text</button>
+              </form>
+              <div id="document-list" class="stack"></div>
+            </article>
+          </div>
+          <div class="label" style="margin-top:12px">FOLLOW-UP SUGGESTIONS</div>
+          <p class="hint">Sirf woh business contact jisse 2 din se koi message nahi. Suggestion bheja nahi jata.</p>
+          <div id="followup-list" class="stack"></div>
+        </section>

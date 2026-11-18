@@ -1,0 +1,16 @@
+<section class="panel extra" id="rules">
+          <div class="label">AUTOMATION</div>
+          <div class="flow">
+            <div class="step">If emergency stop is on, then no reply is sent.</div>
+            <div class="step">If the person is operational or blocked, then the message is skipped.</div>
+            <div class="step">If the person is unknown, then the message is held. No draft is guessed.</div>
+            <div class="step">If you selected that contact for 1, 7, 15, or 30 days, then a reply can queue until that time ends. Price, payment, discount, and legal questions still wait for approval.</div>
+            <div class="step">If mode is Approval, then you approve the draft first.</div>
+          </div>
+          <div class="row">
+            <button class="save" id="rule-approval" type="button">Approval ke baad reply</button>
+            <button class="chip" id="rule-auto" type="button">Approved contacts auto</button>
+          </div>
+          <p class="hint" id="rule-state"></p>
+          <p class="hint">No scheduled task is saved. Price, time, and OTP are not guessed.</p>
+        </section>
